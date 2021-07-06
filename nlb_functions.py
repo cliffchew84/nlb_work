@@ -4,7 +4,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 def get_book_urls_on_page(soup, book_urls_list):
-    """ Getting book urls from page for NLB project"""
+    """ Getting book urls from page for NLB project 
+    
+    Args: 
+        BS Object
+        : list
+    """
 
     for a in soup.find_all('a', href=True):
         if "catalogue" in a['href']:
