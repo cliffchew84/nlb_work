@@ -2,7 +2,6 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-
 def get_book_urls_on_page(soup):
     """ Getting book urls from page for NLB project """
 
