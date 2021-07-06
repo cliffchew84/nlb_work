@@ -3,8 +3,8 @@ Hi all. This is my web scraper that extractions information from the Singapore N
 so as to allow me a better way to understand what books are availability in which libraries all over Singapore. 
 
 This web scraper serves two main functions:
-1. Gathers all the books that you have bookmarked in your NLB account.
-1. Gathers all the physical books that you have borrowed from the NLB.
+1. Gathers all the books that you have bookmarked in your NLB account (Books_Borrowed.ipynb).
+1. Gathers all the physical books that you have borrowed from the NLB (Books_in_Bookmarks.ipynb).
 1. Both scripts will push the information as a DataFrame (table) into your selected Google Sheets.
 
 Some points to take note:
