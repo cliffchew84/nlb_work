@@ -2,6 +2,7 @@ appnope==0.1.2
 argon2-cffi==20.1.0
 async-generator==1.10
 attrs==21.2.0
+autopep8==1.5.7
 backcall==0.2.0
 beautifulsoup4==4.9.3
 bleach==3.3.0
@@ -23,6 +24,7 @@ google-auth==1.32.1
 google-auth-httplib2==0.1.0
 google-auth-oauthlib==0.4.4
 googleapis-common-protos==1.53.0
+html5lib==1.1
 httplib2==0.19.1
 idna==2.10
 ipykernel==6.0.1
@@ -60,6 +62,7 @@ protobuf==3.17.3
 ptyprocess==0.7.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
+pycodestyle==2.7.0
 pycparser==2.20
 Pygments==2.9.0
 pygsheets==2.0.5
@@ -79,6 +82,7 @@ six==1.16.0
 soupsieve==2.2.1
 terminado==0.10.1
 testpath==0.5.0
+toml==0.10.2
 tornado==6.1
 traitlets==5.0.5
 uritemplate==3.0.1
