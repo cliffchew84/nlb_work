@@ -2,15 +2,10 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
+def get_book_urls_on_page(soup):
+    """ Getting book urls from page for NLB project """
 
-def get_book_urls_on_page(soup, book_urls_list):
-    """ Getting book urls from page for NLB project 
-    
-    Args: 
-        BS Object
-        : list
-    """
-
+    book_urls_list = list()
     for a in soup.find_all('a', href=True):
         if "catalogue" in a['href']:
             book_urls_list.append(a['href'])
