@@ -15,4 +15,4 @@ Some points to take note:
 4. As all scrapers, the code may break if the NLB website UI changes, and I may not have the time to ensure the full functionality of the scraper.
 5. If anyone is planning to use this, please use it sparingly. I love the NLB, so don't abuse this code.
 
-For those interested, this is the attached Medium post (WIP) for this repo. 
+For those interested, this is the attached [Medium post](https://cliffy-gardens.medium.com/f74c541f1f94) for this repo. 
