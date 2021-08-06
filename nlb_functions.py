@@ -79,7 +79,7 @@ def log_in_nlb(browser, account_name, password):
 
     time.sleep(1)
 
-    login_button_2 = """//*[@id="fm1"]/section[3]/input[4]"""
+    login_button_2 = """//*[@id="fm1"]/section/input[4]"""
     browser.find_element_by_xpath(login_button_2).click()
     
     return browser
