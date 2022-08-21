@@ -1,0 +1,22 @@
+1660789171891	geckodriver	INFO	Listening on 127.0.0.1:58333
+1660789171917	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "58334" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/nz/blqkdcdd5yg_7qnwgk16f6z40000gn/T/rust_mozprofileoGBXBZ"
+*** You are running in headless mode.
+*** You are running in headless mode.
+WebDriver BiDi listening on ws://localhost:58334
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:58334/devtools/browser/24a63e73-bfcb-4c78-ac54-78c99028a0d4
+1660789192755	geckodriver	INFO	Listening on 127.0.0.1:58371
+1660789193180	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "58372" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/nz/blqkdcdd5yg_7qnwgk16f6z40000gn/T/rust_mozprofileuMWXQZ"
+*** You are running in headless mode.
+1660789193529	Marionette	INFO	Marionette enabled
+1660789193583	Marionette	INFO	Listening on port 58379
+WebDriver BiDi listening on ws://localhost:58372
+Read port: 58379
+1660789193970	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/nz/blqkdcdd5yg_7qnwgk16f6z40000gn/T/rust_mozprofileuMWXQZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58372/devtools/browser/6890e2e0-60fa-42bc-9c96-45d432aee607
+1660789233809	geckodriver	INFO	Listening on 127.0.0.1:58402
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
