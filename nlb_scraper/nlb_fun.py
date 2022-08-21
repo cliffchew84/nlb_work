@@ -3,7 +3,8 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-def activate_chrome_selenium_latest(proxy_add=None, have_pic=True, is_headless=True):
+def activate_chrome_selenium_latest(
+    proxy_add=None, have_pic=True, is_headless=True):
     """ 
     Activates Chrome for Selenium web scrapping, and allows for more customisations
     
@@ -23,7 +24,9 @@ def activate_chrome_selenium_latest(proxy_add=None, have_pic=True, is_headless=T
     chrome_options.add_argument(" --disable-gpu")
     chrome_options.add_argument(" --disable-infobars")
     chrome_options.add_argument(" -–disable-web-security")
-    chrome_options.add_argument("--no-sandbox") 
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument('''--user-agent="Mozilla/5.0 (Windows NT 6.1; 
+WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"''')
         
     if proxy_add != None:
         chrome_options.add_argument(proxy_add)
@@ -51,6 +54,7 @@ def get_book_urls_on_page(soup):
             book_urls_list.append(a['href'])
     return book_urls_list
 
+
 def log_in_nlb(browser, account_name, password):
     """ Authenticates into the NLB app
         Args:
@@ -68,18 +72,18 @@ def log_in_nlb(browser, account_name, password):
 
     # Actions on login page
     username_tag = """//*[@id="username"]"""
-    element = browser.find_element_by_xpath(username_tag)
+    element = browser.find_element('xpath', username_tag)
     element.send_keys("{}".format(account_name))
 
     time.sleep(1)
 
     password_tag = """//*[@id="password"]"""
-    element = browser.find_element_by_xpath(password_tag)
+    element = browser.find_element('xpath', password_tag)
     element.send_keys("{}".format(password))
 
     time.sleep(1)
 
     login_button_2 = """//*[@id="fm1"]/section/input[4]"""
-    browser.find_element_by_xpath(login_button_2).click()
+    browser.find_element('xpath', login_button_2).click()
     
     return browser
